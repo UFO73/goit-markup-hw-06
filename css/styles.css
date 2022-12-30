@@ -681,7 +681,6 @@ color: var(--logo-footer-white);
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
-    min-height: 576px;
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 24px;
@@ -723,6 +722,14 @@ color: var(--logo-footer-white);
     fill: #FFFFFF;
 }
 
+.registration-form-massage::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
 .registration-form-title {
     display: block;
     text-align: center;
@@ -736,6 +743,7 @@ color: var(--logo-footer-white);
     display: block;
     position: relative;
     margin-bottom: 8px;
+    font-size: 18px;
 }
 
 .registration-form-label {
@@ -749,7 +757,7 @@ color: var(--logo-footer-white);
 
 .registration-form-input {
     width: 100%;
-    height: 26px;
+    height: 40px;
     padding: 0 38px;
 
     background-color: transparent;
@@ -770,7 +778,7 @@ color: var(--logo-footer-white);
 
 .registration-form-icon {
     position: absolute;
-    bottom: 6px;
+    bottom: 14px;
     left: 19px;
     fill: var(--title-text-color);
     transition: fill var(--transform);
