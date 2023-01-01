@@ -852,30 +852,56 @@ color: var(--logo-footer-white);
 }
 
 .registration-form-agreement {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.3;
     letter-spacing: 0.04em; 
     color: var(--model-police-text);
     margin-bottom: 24px;
-
+    
 }
 
 .registration-form-custom {
+    position: relative;
     display: inline-block;
     width: 16px;
     height: 16px;
-    border: 1.25px solid #2E2F42;
+    border: 1.25px solid var(--title-text-color);
     border-radius: 2px;
+    margin-right: 8px;
+}
+
+.registration-form-click {
+    position: absolute;
+    fill: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.registration-form-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .registration-form-checkbox:checked + .registration-form-custom {
     background-color: var(--ocean-blue-accent);
     border: 1.25px solid var(--ocean-blue-accent);
     background-image: url(../images/click.svg);
-    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
+}
+
+.registration-form-checkbox:checked + .registration-form-custom .registration-form-click {
+    fill: var(--logo-footer-white);
 }
 
 .model-btn {
