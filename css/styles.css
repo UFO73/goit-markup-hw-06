@@ -927,4 +927,8 @@ color: var(--logo-footer-white);
 .model-btn:focus {
     background-color: var(--ocean-blue-accent);
 }
+
+.registration-form-link {
+    color: var(--ocean-blue-accent);
+}
 /* =========== MODEL WINDOW =========== */
